@@ -7,7 +7,6 @@
               this.x = x;
               this.y = y;
               this.speed = speed;
-              this.sprite = '';
           }
           //Rendering the sprites
           render() {
@@ -15,10 +14,17 @@
           }
           //updating the game
           update(dt) {
-              this.x += this.speed * dt;
+              this.x += 1 + this.speed * dt;
+              //   console.log(this.speed);
+
               if (this.x > 550) {
                   this.x = -100;
                   this.speed = 50 + Math.floor(Math.random() * 500);
+                  if (this.speed < 100) {
+                      this.speed = 105;
+                  }
+                  console.log(this.speed);
+
               }
               if (this.x < player.x + 50 && this.x + 50 > player.x && this.y < player.y + 40 && 40 + this.y > player.y) {
                   player.x = 200;
@@ -49,6 +55,8 @@
               this.x = 200;
               this.y = 380;
               score.innerHTML++;
+              console.log(this.speed);
+              this.speed *= 50;
           }
           // basic handing and i made sure the player dont go beyond the canavas
           handleInput(allowedKeys) {
