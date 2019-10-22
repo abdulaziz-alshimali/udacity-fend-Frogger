@@ -18,3 +18,8 @@ For detailed instructions on how to get started, check out this [guide](https://
 ## Contributing
 
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+
+## How the code oprate 
+The project contains three js files; engine which is moves the game and the characters and resurses which loads the images and app where i implemnted the the enemy and player classes
+## How to run the code
+Clone this repo and open the HTML file and you'll be all set (:
