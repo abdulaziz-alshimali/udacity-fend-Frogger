@@ -2,8 +2,9 @@
 
 ## Table of Contents
 
-- [Instructions](#instructions)
-- [Contributing](#contributing)
+- [How the code oprate](#Howthecodeoprate )
+- [How to run the code](#Howtorunthecode)
+- [How to play the game](#Howtoplaythegame)
 
 
 ## How the code oprate 
